@@ -2,7 +2,7 @@ module Jekyll
   module HandleFilter
 
     def handleize(content)
-      content.to_str.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+      content.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
     end
 
   end
